@@ -1,2 +1,2 @@
 # Homebridged
-A Docker image for Homebridge
+A minimal Docker image for Homebridge
