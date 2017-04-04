@@ -17,6 +17,6 @@ RUN apt-get update \
 	&& apt-get autoremove --purge -y \
 	&& apt-get clean
 
-CMD service dbus start \
+ENTRYPOINT service dbus start \
 	&& service avahi-daemon start \
 	&& homebridge
