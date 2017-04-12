@@ -22,6 +22,3 @@ npm install -g homebridge-platform-wemo
 nano ~/.homebridge/config.json
 exit
 docker restart homebridge
-# If Docker fails to restart it, manually start it:
-# docker start homebridge
-```

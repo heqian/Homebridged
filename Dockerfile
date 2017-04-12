@@ -22,6 +22,8 @@ RUN apt-get update \
 
 EXPOSE 5353/udp 51826/tcp
 
-ENTRYPOINT service dbus start \
+ENTRYPOINT rm -f /var/run/dbus/pid \
+	&& rm -f /var/run/avahi-daemon/pid \
+	&& service dbus start \
 	&& service avahi-daemon start \
 	&& homebridge
