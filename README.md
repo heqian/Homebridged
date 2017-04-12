@@ -19,7 +19,6 @@ docker exec -it homebridge /bin/bash
 npm install -g homebridge-platform-wemo
 # Edit configuration file
 # Example: https://github.com/nfarina/homebridge/blob/master/config-sample.json
-export TERM=xterm
 nano ~/.homebridge/config.json
 exit
 docker restart homebridge

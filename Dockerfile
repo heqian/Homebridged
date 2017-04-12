@@ -2,6 +2,9 @@ FROM ubuntu
 
 MAINTAINER Qian He <github@heqian.name>
 
+ENV DEBIAN_FRONTEND noninteractive
+ENV TERM xterm
+
 RUN apt-get update \
 	&& apt-get dist-upgrade -y \
 	# APT
