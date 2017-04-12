@@ -17,6 +17,8 @@ RUN apt-get update \
 	&& apt-get autoremove --purge -y \
 	&& apt-get clean
 
+EXPOSE 5353/udp 51826/tcp
+
 ENTRYPOINT service dbus start \
 	&& service avahi-daemon start \
 	&& homebridge
